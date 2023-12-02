@@ -1,0 +1,182 @@
+{
+    "window.dialogStyle": "custom",
+    "window.titleBarStyle": "custom",
+    "window.confirmBeforeClose": "always",
+    "window.restoreWindows": "none",
+    "window.commandCenter": false,
+    "window.autoDetectColorScheme": true,
+    "editor.minimap.enabled": false,
+    "editor.cursorSurroundingLines": 5,
+    "editor.roundedSelection": false,
+    "editor.mouseWheelZoom": false,
+    "editor.lightbulb.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', 'JetBrains Mono', 'Consolas', monospace",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.65,
+    "workbench.editor.tabSizing": "fixed",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
+    "debug.toolBarLocation": "docked",
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.cursorBlinking": true,
+    "outline.collapseItems": "alwaysCollapse",
+    "telemetry.telemetryLevel": "off",
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.saturation": 0.7,
+    "material-icon-theme.activeIconPack": "none",
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-q>": true,
+        "<C-w>": true,
+        "<C-e>": true,
+        "<C-r>": true,
+        "<C-t>": true,
+        "<C-y>": true,
+        "<C-u>": true,
+        "<C-i>": true,
+        "<C-o>": true,
+        "<C-p>": true,
+        "<C-a>": true,
+        "<C-s>": true,
+        "<C-d>": true,
+        "<C-f>": true,
+        "<C-g>": true,
+        "<C-h>": true,
+        "<C-j>": true,
+        "<C-k>": true,
+        "<C-l>": true,
+        "<C-z>": true,
+        "<C-x>": true,
+        "<C-c>": true,
+        "<C-v>": true,
+        "<C-b>": true,
+        "<C-n>": true,
+        "<C-m>": true
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "Y"
+            ],
+            "after": [
+                "y",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "commands": [
+                ":nohlsearch"
+            ]
+        },
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditorInGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ],
+    "git-graph.graph.colours": [
+        "#2e8bc5",
+        "#bf4f9a",
+        "#55b85a",
+        "#bc4545",
+        "#c79648",
+        "#943eb0",
+        "#53ccc4",
+        "#ab1cb0",
+        "#bbee6a",
+        "#b3532a",
+        "#8847e2",
+        "#eecc47"
+    ],
+    "git-graph.tabIconColourTheme": "grey",
+    "git-graph.showStatusBarItem": false,
+    "window.zoomLevel": 1,
+}
