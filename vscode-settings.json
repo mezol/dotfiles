@@ -63,103 +63,52 @@
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [
-                "Y"
-            ],
-            "after": [
-                "y",
-                "$"
-            ]
+            "before": ["Y"],
+            "after": ["y", "$"]
         },
         {
-            "before": [
-                "n"
-            ],
-            "after": [
-                "n",
-                "z",
-                "z"
-            ]
+            "before": ["n"],
+            "after": ["n", "z", "z"]
         },
         {
-            "before": [
-                "N"
-            ],
-            "after": [
-                "N",
-                "z",
-                "z"
-            ]
+            "before": ["N"],
+            "after": ["N", "z", "z"]
         },
         {
-            "before": [
-                "<leader>",
-                "c"
-            ],
-            "commands": [
-                ":nohlsearch"
-            ]
+            "before": ["<leader>", "c"],
+            "commands": [":nohlsearch"]
         },
         {
-            "before": [
-                "u"
-            ],
-            "commands": [
-                "undo"
-            ]
+            "before": ["u"],
+            "commands": ["undo"]
         },
         {
-            "before": [
-                "<C-r>"
-            ],
-            "commands": [
-                "redo"
-            ]
+            "before": ["<C-r>"],
+            "commands": ["redo"]
         },
         {
-            "before": [
-                "<leader>",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.previousEditorInGroup"
-            ]
+            "before": ["<S-Tab>"],
+            "commands": ["workbench.action.previousEditorInGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.nextEditorInGroup"
-            ]
+            "before": ["Tab"],
+            "commands": ["workbench.action.nextEditorInGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "q"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ]
+            "before": ["<leader>", "q"],
+            "commands": ["workbench.action.closeActiveEditor"]
         },
         {
-            "before": [
-                "<leader>",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.files.save"
-            ]
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.files.save"]
         },
         {
-            "before": [
-                "<leader>",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.splitEditorRight"]
         }
     ],
     "git-graph.graph.colours": [
@@ -178,5 +127,60 @@
     ],
     "git-graph.tabIconColourTheme": "grey",
     "git-graph.showStatusBarItem": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "prettier.quoteProps": "consistent",
+    "prettier.semi": true,
+    "prettier.printWidth": 120,
     "window.zoomLevel": 1,
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterNames.enabled": "literals",
+    "typescript.inlayHints.parameterNames.enabled": "literals",
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "javascript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "workbench.activityBar.location": "top",
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.configureOnOpen": false,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, TabWidth: 4, UseTab: true }"
 }
