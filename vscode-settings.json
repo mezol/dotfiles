@@ -186,5 +186,7 @@
     "workbench.activityBar.location": "top",
     "cmake.showOptionsMovedNotification": false,
     "cmake.configureOnOpen": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, TabWidth: 4, UseTab: true }"
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, TabWidth: 4, UseTab: true }",
+    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "workbench.preferredLightColorTheme": "Default Light+"
 }
