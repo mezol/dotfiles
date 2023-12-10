@@ -109,6 +109,10 @@
         {
             "before": ["<leader>", "h"],
             "commands": ["workbench.action.splitEditorRight"]
+        },
+        {
+            "before": ["<S-k>"],
+            "commands": ["editor.action.showHover"]
         }
     ],
     "git-graph.graph.colours": [
