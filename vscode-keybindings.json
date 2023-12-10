@@ -127,11 +127,6 @@
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "terminalFocus"
     },
-    {
-        "key": "shift+k",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
     // Unbindings
     {
         "key": "ctrl+h",
