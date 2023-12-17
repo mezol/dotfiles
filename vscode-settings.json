@@ -12,8 +12,7 @@
     "editor.lightbulb.enabled": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code', 'JetBrains Mono', 'Consolas', monospace",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Consolas', monospace",
     "editor.lineHeight": 1.65,
     "workbench.editor.tabSizing": "fixed",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
@@ -61,7 +60,7 @@
         "<C-n>": true,
         "<C-m>": true
     },
-    "vim.normalModeKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindings": [
         {
             "before": ["Y"],
             "after": ["y", "$"]
@@ -75,10 +74,6 @@
             "after": ["N", "z", "z"]
         },
         {
-            "before": ["<leader>", "c"],
-            "commands": [":nohlsearch"]
-        },
-        {
             "before": ["u"],
             "commands": ["undo"]
         },
@@ -87,28 +82,16 @@
             "commands": ["redo"]
         },
         {
-            "before": ["<S-Tab>"],
-            "commands": ["workbench.action.previousEditorInGroup"]
-        },
-        {
             "before": ["Tab"],
             "commands": ["workbench.action.nextEditorInGroup"]
         },
         {
-            "before": ["<leader>", "q"],
-            "commands": ["workbench.action.closeActiveEditor"]
+            "before": ["<S-Tab>"],
+            "commands": ["workbench.action.previousEditorInGroup"]
         },
         {
-            "before": ["<leader>", "s"],
-            "commands": ["workbench.action.files.save"]
-        },
-        {
-            "before": ["<leader>", "f"],
+            "before": ["<C-p>"],
             "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["<leader>", "h"],
-            "commands": ["workbench.action.splitEditorRight"]
         },
         {
             "before": ["<S-k>"],
@@ -169,24 +152,20 @@
     "prettier.semi": true,
     "prettier.printWidth": 120,
     "window.zoomLevel": 1,
-    "javascript.referencesCodeLens.enabled": true,
     "typescript.referencesCodeLens.enabled": true,
-    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
     "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "javascript.inlayHints.parameterNames.enabled": "literals",
     "typescript.inlayHints.parameterNames.enabled": "literals",
-    "javascript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
-    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "javascript.inlayHints.variableTypes.enabled": true,
     "typescript.inlayHints.variableTypes.enabled": true,
-    "javascript.inlayHints.enumMemberValues.enabled": true,
     "typescript.inlayHints.enumMemberValues.enabled": true,
     "workbench.activityBar.location": "top",
     "cmake.showOptionsMovedNotification": false,
     "cmake.configureOnOpen": false,
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, TabWidth: 4, UseTab: true }",
-    "workbench.preferredDarkColorTheme": "Default Dark+",
-    "workbench.preferredLightColorTheme": "Default Light+"
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Noctis Bordo",
+    "workbench.preferredDarkColorTheme": "Noctis Bordo",
+    "workbench.preferredLightColorTheme": "Noctis Lux",
+    "extensions.ignoreRecommendations": true
 }
