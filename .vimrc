@@ -97,19 +97,21 @@ nnoremap <S-Tab> :bprevious<CR>
 let g:netrw_banner = 0
 
 " Press <leader>f to open netrw
-" nnoremap <leader>f :E<CR>
+nnoremap <leader>f :E<CR>
 
 " Press <leader>b to list open buffers; Type a number to switch to a buffer
-" nnoremap <leader>b :ls<CR>:b<Space>
+nnoremap <leader>b :ls<CR>:b<Space>
 
 " --- plugin section ---
-call plug#begin()
+if ! empty(globpath(&rtp, 'autoload/plug.vim'))
+	call plug#begin()
 
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'ctrlpvim/ctrlp.vim'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-commentary'
+	Plug 'ctrlpvim/ctrlp.vim'
 
-call plug#end()
+	call plug#end()
 
-" CtrlP settings
-let g:ctrlp_show_hidden = 1
+	" CtrlP settings
+	let g:ctrlp_show_hidden = 1
+endif
