@@ -5,7 +5,7 @@ set nocompatible
 set encoding=utf8
 
 " Detect the filetype and apply options related to this filetype
-filetype plugin indent on
+filetype on
 
 " Enable syntax highlighting
 syntax enable
@@ -24,12 +24,6 @@ set showcmd
 
 " Enhance command-line completion
 set wildmenu
-
-" When splitting a window put the new window right of the current one
-set splitright
-
-" When splitting a window put the new window below the current one
-set splitbelow
 
 " Always show the status line
 set laststatus=2
@@ -64,9 +58,6 @@ set sidescrolloff=5
 " Highlight the text line of the cursor
 set cursorline
 
-" Number of spaces that a <Tab> in the file counts for
-set tabstop=4
-
 " Do not save session options and mappings
 set sessionoptions-=options
 set viewoptions-=options
@@ -98,30 +89,20 @@ nnoremap <C-RIGHT> :vertical resize +2<CR>
 inoremap <C-U> <C-G>u<C-U>
 inoremap <C-W> <C-G>u<C-W>
 
-" Press <C-L> to clear search
-nnoremap <C-L> :nohlsearch<CR><C-L>
-
-" Quickly switch buffers with <leader>h and <leader>l
-nnoremap <leader>h :bprevious<CR>
-nnoremap <leader>l :bnext<CR>
-
-" Press <leader>q to unload the buffer
-nnoremap <leader>q :bwipe<CR>
-
-" Press <leader>s to save the buffer if it changed
-nnoremap <leader>s :update<CR>
+" Quickly switch buffers with Tab and Shift + Tab
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 " Hide netrw banner by default
 let g:netrw_banner = 0
 
-" [uncomment if ctrlp is NOT used]
 " Press <leader>f to open netrw
 " nnoremap <leader>f :E<CR>
 
 " Press <leader>b to list open buffers; Type a number to switch to a buffer
 " nnoremap <leader>b :ls<CR>:b<Space>
 
-" ----------
+" --- plugin section ---
 call plug#begin()
 
 Plug 'tpope/vim-surround'
@@ -129,13 +110,6 @@ Plug 'tpope/vim-commentary'
 Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
-" ----------
 
 " CtrlP settings
-let g:ctrlp_map = ''
-
-nnoremap <leader>f :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-
-" Show hidden files in CtrlP
 let g:ctrlp_show_hidden = 1
