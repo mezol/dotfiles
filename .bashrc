@@ -21,11 +21,6 @@ bind "set bell-style visible"
 bind "set completion-ignore-case on"
 
 ### ALIASES ###
-# vim related
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-
 # ls related
 if ! command -v exa &> /dev/null
 then
@@ -67,6 +62,7 @@ alias h="history | grep " # Search command line history
 alias p="ps -o user,ppid,pid,cmd -A | grep " # Search running processes
 alias r=". ranger"
 alias lg="lazygit"
+alias vim="nvim"
 
 alias datef='date "+%A, %T %d.%m.%Y (%Z)"'
 alias diskusage="du -h --max-depth=1 | sort -h -r"
@@ -106,12 +102,11 @@ BRIGHTCYAN="\033[00;96m"
 BRIGHTWHITE="\033[00;97m"
 
 # PROMPT
-function check_if_clean() {
-	[[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]] && echo "*"
+function parse_git_dirty {
+  [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
+}
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ [\1$(parse_git_dirty)]/"
 }
 
-function parse_git_branch() {
-	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(check_if_clean)/"
-}
-
-PS1="\[$GREEN\]\u \[$GRAY\]at \[$CYAN\]\H \[$GRAY\]in \[$YELLOW\]\W\[$GRAY\]\$([[ -n \$(git branch 2>/dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET_COLOR\]\n\$ > "
+PS1="\[$GRAY\]\t \[$CYAN\]\w\[$RED\]\$(parse_git_branch)\[$RESET_COLOR\]\n> "
