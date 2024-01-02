@@ -175,8 +175,12 @@ telescope.setup({
 					["<C-k>"] = t_actions.move_selection_previous
 				},
 			},
+			hidden = true
 		},
 	},
+	defaults = {
+		file_ignore_patterns = { ".git/" }
+	}
 })
 vim.keymap.set("n", "<C-p>", t_builtin.find_files)
 
@@ -189,3 +193,9 @@ comment.setup()
 -- Setup Surround
 local nvim_surround = require("nvim-surround")
 nvim_surround.setup()
+
+-- Setup theme
+local catppuccin = require("catppuccin")
+catppuccin.setup({
+	transparent_background = true
+})
