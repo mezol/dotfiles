@@ -55,9 +55,6 @@ set sidescroll=1
 " The minimal number of screen columns to keep to the left and to the right of the cursor if 'nowrap' is set
 set sidescrolloff=5
 
-" Highlight the text line of the cursor
-set cursorline
-
 " Do not save session options and mappings
 set sessionoptions-=options
 set viewoptions-=options
