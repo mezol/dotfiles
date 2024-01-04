@@ -182,7 +182,9 @@ telescope.setup({
 		file_ignore_patterns = { ".git/" }
 	}
 })
-vim.keymap.set("n", "<C-p>", t_builtin.find_files)
+vim.keymap.set("n", "<C-p>f", t_builtin.find_files)
+vim.keymap.set("n", "<C-p>p", t_builtin.git_files)
+vim.keymap.set("n", "<C-p>g", t_builtin.live_grep)
 
 
 -- Setup Comment
