@@ -22,9 +22,9 @@ bind "set completion-ignore-case on"
 
 ### ALIASES ###
 # ls related
-if ! command -v exa &> /dev/null
+if ! command -v eza &> /dev/null
 then
-	echo "\"exa\" is not installed. Falling back to \"ls\"."
+	echo "\"eza\" is not installed. Falling back to \"ls\"."
 	alias ls="ls --color=auto --group-directories-first"
 	alias lsa="ls --almost-all"
 	alias la="ls --almost-all"
@@ -34,22 +34,21 @@ then
 elif ! command -v git &> /dev/null
 then
 	echo "\"git\" is not installed."
-	alias ls="exa --classify --group-directories-first"
-	alias lsa="exa --classify --all --group-directories-first"
-	alias la="exa --classify --all --group-directories-first"
-	alias ll="exa --long --header --group --classify --all --group-directories-first"
-	alias l="exa --long --header --no-user --classify --all --group-directories-first"
-	alias l.="exa --classify --group-directories-first --list-dirs .*"
+	alias ls="eza --classify --group-directories-first"
+	alias lsa="eza --classify --all --group-directories-first"
+	alias la="eza --classify --all --group-directories-first"
+	alias ll="eza --long --header --group --classify --all --group-directories-first"
+	alias l="eza --long --header --no-user --classify --all --group-directories-first"
+	alias l.="eza --classify --group-directories-first --list-dirs .*"
 else
-	alias ls="exa --classify --group-directories-first"
-	alias lsa="exa --classify --all --group-directories-first"
-	alias la="exa --classify --all --group-directories-first"
-	alias ll="exa --long --header --git --group --classify --all --group-directories-first"
-	alias l="exa --long --header --git --no-user --classify --all --group-directories-first"
-	alias l.="exa --classify --group-directories-first --list-dirs .*"
+	alias ls="eza --classify --group-directories-first"
+	alias lsa="eza --classify --all --group-directories-first"
+	alias la="eza --classify --all --group-directories-first"
+	alias ll="eza --long --header --git --group --classify --all --group-directories-first"
+	alias l="eza --long --header --git --no-user --classify --all --group-directories-first"
+	alias l.="eza --classify --group-directories-first --list-dirs .*"
 fi
 
-# cd related
 alias ..="cd .."
 alias .2="cd ../.."
 alias .3="cd ../../.."
