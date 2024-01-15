@@ -37,7 +37,27 @@ lazy.setup({
 
 	{ "kylechui/nvim-surround" },
 
-	{ "catppuccin/nvim" }
+	{ "catppuccin/nvim" },
+
+	{
+		"nvim-neorg/neorg",
+		build = ":Neorg sync-parsers",
+		config = function()
+			require("neorg").setup {
+				load = {
+					["core.defaults"] = {},
+					["core.dirman"] = {
+						config = {
+							workspaces = {
+								notes = "~/notes",
+							},
+							default_workspace = "notes"
+						},
+					},
+				},
+			}
+		end,
+	},
 })
 
 
