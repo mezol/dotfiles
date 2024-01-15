@@ -167,17 +167,6 @@ local telescope = require("telescope")
 local t_builtin = require("telescope.builtin")
 local t_actions = require("telescope.actions")
 telescope.setup({
-	pickers = {
-		find_files = {
-			mappings = {
-				i = {
-					["<C-j>"] = t_actions.move_selection_next,
-					["<C-k>"] = t_actions.move_selection_previous
-				},
-			},
-			hidden = true
-		},
-	},
 	defaults = {
 		file_ignore_patterns = { ".git/" }
 	}
@@ -185,6 +174,9 @@ telescope.setup({
 vim.keymap.set("n", "<C-p>f", t_builtin.find_files)
 vim.keymap.set("n", "<C-p>p", t_builtin.git_files)
 vim.keymap.set("n", "<C-p>g", t_builtin.live_grep)
+vim.keymap.set("n", "<C-p>b", t_builtin.buffers)
+vim.keymap.set("n", "<C-p>h", t_builtin.current_buffer_fuzzy_find)
+vim.keymap.set("n", "<C-p>s", t_builtin.lsp_document_symbols)
 
 
 -- Setup Comment
