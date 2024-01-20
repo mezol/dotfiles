@@ -1,41 +1,9 @@
 [
-    // Editor navigation keybindings
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusNextGroup",
-        "when": "editorTextFocus"
-    },
     {
         "key": "ctrl+shift+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
-    // Suggestions keybindings
-    {
-        "key": "ctrl+j",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "tab",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "shift+tab",
-        "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    // Quick panel keybindings
+    // ----------
     {
         "key": "ctrl+n",
         "command": "workbench.action.quickOpenNavigateNext",
@@ -46,54 +14,7 @@
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
     },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.quickOpenNavigatePrevious",
-        "when": "inQuickOpen"
-    },
-    // These two keybindings are currently bugged
-    // {
-    //     "key": "tab",
-    //     "command": "workbench.action.quickOpenNavigateNext",
-    //     "when": "inQuickOpen"
-    // },
-    // {
-    //     "key": "shift+tab",
-    //     "command": "workbench.action.quickOpenNavigatePrevious",
-    //     "when": "inQuickOpen"
-    // },
-    // File explorer keybindings
-    {
-        "key": "r",
-        "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    {
-        "key": "a",
-        "command": "explorer.newFile",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "shift+a",
-        "command": "explorer.newFolder",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    // Terminal keybindings
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus && !suggestWidgetVisible && !inQuickOpen"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
+    // ----------
     {
         "key": "ctrl+`",
         "command": "workbench.action.togglePanel"
@@ -101,35 +22,19 @@
     {
         "key": "ctrl+m",
         "command": "workbench.action.toggleMaximizedPanel",
-        "when": "terminalFocus"
+        "when": "panelFocus"
     },
-    // Unbindings
+    // ----------
     {
         "key": "ctrl+h",
         "command": "-editor.action.startFindReplaceAction"
     },
     {
-        "key": "enter",
-        "command": "-renameFile"
-    },
-    {
         "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
+        "command": "-workbench.action.togglePanel",
     },
     {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "-editor.action.toggleTabFocusMode"
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
     }
 ]
