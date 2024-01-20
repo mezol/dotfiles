@@ -23,6 +23,7 @@
     "workbench.iconTheme": "catppuccin-mocha",
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.editorActionsLocation": "titleBar",
 
     "debug.toolBarLocation": "docked",
     "explorer.compactFolders": false,
