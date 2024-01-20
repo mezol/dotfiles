@@ -1,10 +1,11 @@
 {
+    "window.zoomLevel": 1,
     "window.dialogStyle": "custom",
     "window.titleBarStyle": "custom",
     "window.confirmBeforeClose": "always",
     "window.restoreWindows": "none",
     "window.commandCenter": false,
-    "window.autoDetectColorScheme": true,
+
     "editor.minimap.enabled": false,
     "editor.cursorSurroundingLines": 5,
     "editor.roundedSelection": false,
@@ -12,26 +13,24 @@
     "editor.lightbulb.enabled": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Consolas', monospace",
+    "editor.fontFamily": "'Fira Code', 'JetBrains Mono', 'Consolas', monospace",
+    "editor.fontSize": 16,
     "editor.lineHeight": 1.65,
+
     "workbench.editor.tabSizing": "fixed",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
-    "workbench.layoutControl.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.productIconTheme": "material-product-icons",
+    "workbench.activityBar.location": "top",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
+
     "debug.toolBarLocation": "docked",
     "explorer.compactFolders": false,
     "breadcrumbs.enabled": false,
     "terminal.integrated.cursorBlinking": true,
-    "outline.collapseItems": "alwaysCollapse",
     "telemetry.telemetryLevel": "off",
-    "material-icon-theme.folders.theme": "classic",
-    "material-icon-theme.saturation": 0.7,
-    "material-icon-theme.activeIconPack": "none",
+    "extensions.ignoreRecommendations": true,
+
     "vim.leader": "<space>",
-    "vim.hlsearch": true,
-    "vim.highlightedyank.enable": true,
-    "vim.foldfix": true,
     "vim.handleKeys": {
         "<C-q>": true,
         "<C-w>": true,
@@ -98,22 +97,17 @@
             "commands": ["editor.action.showHover"]
         }
     ],
-    "git-graph.graph.colours": [
-        "#2e8bc5",
-        "#bf4f9a",
-        "#55b85a",
-        "#bc4545",
-        "#c79648",
-        "#943eb0",
-        "#53ccc4",
-        "#ab1cb0",
-        "#bbee6a",
-        "#b3532a",
-        "#8847e2",
-        "#eecc47"
-    ],
+
     "git-graph.tabIconColourTheme": "grey",
     "git-graph.showStatusBarItem": false,
+    "git-graph.graph.colours": [
+        "#f38ba8",
+        "#a6e3a1",
+        "#89b4fa",
+        "#f9e2af",
+        "#cba6f7"
+    ],
+
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -146,26 +140,5 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "prettier.tabWidth": 4,
-    "prettier.quoteProps": "consistent",
-    "prettier.semi": true,
-    "prettier.printWidth": 120,
-    "window.zoomLevel": 1,
-    "typescript.referencesCodeLens.enabled": true,
-    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "typescript.inlayHints.parameterNames.enabled": "literals",
-    "typescript.inlayHints.parameterTypes.enabled": true,
-    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "typescript.inlayHints.variableTypes.enabled": true,
-    "typescript.inlayHints.enumMemberValues.enabled": true,
-    "workbench.activityBar.location": "top",
-    "cmake.showOptionsMovedNotification": false,
-    "cmake.configureOnOpen": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 0, TabWidth: 4, UseTab: true }",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Noctis Bordo",
-    "workbench.preferredDarkColorTheme": "Noctis Bordo",
-    "workbench.preferredLightColorTheme": "Noctis Lux",
-    "extensions.ignoreRecommendations": true
+    }
 }
