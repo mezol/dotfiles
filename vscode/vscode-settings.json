@@ -90,6 +90,10 @@
             "commands": ["workbench.action.previousEditorInGroup"]
         },
         {
+            "before": ["<C-n>"],
+            "after": ["<Nop>"]
+        },
+        {
             "before": ["<C-p>"],
             "commands": ["workbench.action.quickOpen"]
         },
