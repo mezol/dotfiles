@@ -5,6 +5,7 @@
     "window.restoreWindows": "none",
     "window.autoDetectColorScheme": true,
     "window.zoomLevel": 1,
+    "window.menuBarVisibility": "toggle",
 
     "editor.fontSize": 16,
     "editor.minimap.enabled": false,
@@ -29,6 +30,8 @@
     "terminal.integrated.cursorBlinking": true,
     "telemetry.telemetryLevel": "off",
     "extensions.ignoreRecommendations": true,
+    "scm.showIncomingChanges": "never",
+    "scm.showOutgoingChanges": "never",
 
     "vim.leader": "<space>",
     "vim.handleKeys": {
