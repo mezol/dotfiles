@@ -1,11 +1,10 @@
 {
-    "window.zoomLevel": 1,
     "window.dialogStyle": "custom",
     "window.titleBarStyle": "custom",
     "window.confirmBeforeClose": "always",
     "window.restoreWindows": "none",
     "window.commandCenter": false,
-    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 1,
 
     "editor.fontSize": 16,
     "editor.minimap.enabled": false,
@@ -13,18 +12,19 @@
     "editor.roundedSelection": false,
     "editor.mouseWheelZoom": false,
     "editor.lightbulb.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 32,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'JetBrains Mono', monospace",
+    "editor.fontFamily": "'Cascadia Code', 'JetBrains Mono', monospace",
     "editor.lineHeight": 1.65,
 
-    "workbench.activityBar.location": "top",
     "workbench.editor.tabSizing": "fixed",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Vitesse Black",
     "workbench.tree.renderIndentGuides": "none",
     "workbench.editor.editorActionsLocation": "titleBar",
-    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
 
     "debug.toolBarLocation": "docked",
     "explorer.compactFolders": false,
@@ -46,7 +46,7 @@
         "<C-o>": true,
         "<C-p>": true,
         "<C-a>": true,
-        "<C-s>": true,
+        "<C-s>": false,
         "<C-d>": true,
         "<C-f>": true,
         "<C-g>": true,
@@ -137,5 +137,8 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+
+    "hexeditor.columnWidth": 8,
+    "hexeditor.showDecodedText": true,
 }
